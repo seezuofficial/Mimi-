@@ -1108,7 +1108,81 @@
     <!-- ====== SECTION 4: LETTER ====== -->
     <section id="letter-section">
       <div class="letter-card">
-        
+        <h2>💌 Ek Chhota Sa Paigam...</h2>
+
+        <!-- 🎙️ VOICE NOTE PLAYER -->
+        <div id="voice-note-player" style="background:linear-gradient(135deg,rgba(255,110,180,0.12),rgba(192,132,252,0.12));border:2px solid rgba(255,110,180,0.25);border-radius:20px;padding:1rem 1.5rem;margin-bottom:1.8rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+          <button id="voice-play-btn" onclick="toggleVoiceNote()" style="width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--lavender));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.3rem;color:white;flex-shrink:0;box-shadow:0 4px 14px rgba(255,62,139,0.35);transition:transform 0.2s;">▶️</button>
+          <div style="flex:1;min-width:120px;">
+            <div style="font-family:'Dancing Script',cursive;color:var(--deep);font-size:1rem;margin-bottom:0.3rem;">🎙️ Meri awaaz sunna… sirf tumhare liye</div>
+            <div style="background:rgba(255,110,180,0.15);border-radius:10px;height:6px;position:relative;overflow:hidden;">
+              <div id="voice-progress-bar" style="height:100%;width:0%;background:linear-gradient(90deg,var(--rose),var(--lavender));border-radius:10px;transition:width 0.3s;"></div>
+            </div>
+            <div style="display:flex;justify-content:space-between;margin-top:0.2rem;">
+              <span id="voice-current-time" style="font-size:0.75rem;color:#a06090;">0:00</span>
+              <span id="voice-duration" style="font-size:0.75rem;color:#a06090;">0:00</span>
+            </div>
+          </div>
+        </div>
+        <!-- 🎙️ Voice file: "voice/note.mp3" yahan daalen -->
+        <audio id="voice-note-audio">
+          <source src="voice/note.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="letter-text">
+          Kabhi kabhi zindagi hume bina kisi warning ke kuch aise log de deti hai…<br>
+          jinse milna shayad ek coincidence lagta hai…<br>
+          par dheere dheere samajh aata hai ki wo coincidence nahi…<br>
+          <span class="highlight">kismat ka sabse khoobsurat plan hota hai</span> 💛
+
+          <br><br>
+
+          Tum bhi meri life mein aise hi aayi thi…<br>
+          ek normal si baat, ek simple si shuruaat…<br>
+          par aaj wo hi sab kuch ban chuki ho 😌✨
+
+          <br><br>
+
+          Mujhe yaad nahi ki kaunsi exact baat par main tumse attach hua…<br>
+          kaunsa moment tha jahan se sab change ho gaya…<br>
+          bas itna pata hai ki dheere dheere<br>
+          <span class="highlight">tum meri har soch ka hissa ban gayi</span> 💕
+
+          <br><br>
+
+          Ab haal ye hai ki<br>
+          tum bina kuch bole bhi samajh aa jaati ho…<br>
+          aur main bina tumhare kuch feel hi nahi kar pata 🥺
+
+          <br><br>
+
+          Tum meri wo aadat nahi ho jo waqt ke saath chhoot jaaye…<br>
+          tum meri wo zarurat ho jo saanson ki tarah ho gayi hai ❤️‍🔥
+
+          <br><br>
+
+          Kabhi kabhi main bas chup chaap sochta hun…<br>
+          ki agar tum meri life mein nahi aati…<br>
+          to shayad main kabhi itna genuinely smile karna seekh hi nahi pata 😌
+
+          <br><br>
+
+          Tum meri life ka wo part ho jo main kabhi lose nahi karna chahta…<br>
+          kyunki<br>
+          <span class="highlight">tumhare saath sab kuch simple bhi beautiful lagta hai</span> 💛
+
+          <br><br>
+
+          Bas itna kehna hai…<br>
+          chahe duniya badal jaye, waqt badal jaye…<br>
+          <span class="highlight">tum meri life ka sabse special hissa hamesha rahogi</span> ✨
+
+          <br><br>
+
+          Aur main hamesha yahi chahta rahunga…<br>
+          ki tum khush raho…<br>
+          aur agar mumkin ho… to meri wajah se thodi aur zyada khush raho 😌💫
+        </div>
       </div>
     </section>
 
@@ -1120,105 +1194,130 @@
         <div class="surprise-box" onclick="toggleSurprise(this)">
           <span class="s-emoji">🎂</span>
           <h3>Birthday Wish</h3>
-          <p>Ek bahut khaas wish sirf tumhare liye...</p>
-          <div class="surprise-reveal">🌟 Tumhari zindagi mein itna pyaar aaye ki t<h2>💌 Ek Chhota Sa Dil Ka Paigam...</h2>
-<div class="letter-text">
-  Aaj ka din sirf ek date nahi hai…  
-  aaj wo din hai jab meri zindagi ne sabse khoobsurat wajah paayi… tum 💛🎂  
+          <p>Sirf tumhare liye ek dil se wish...</p>
+          <div class="surprise-reveal">
+            <h2 style="font-family:'Dancing Script',cursive;font-size:2rem;color:var(--rose);margin-bottom:1rem;">🎂 Birthday Wish</h2>
+            <div class="letter-text" style="text-align:left;">
+              Happy Birthday meri baby… meri jaan… meri sab kuch 💛🎂
 
-  Sach bolu meri baby… agar mujhe ek baar phir se zindagi jeene ka mauka mile na,  
-  to main har baar bas ek hi dua maangunga —  
-  <span class="highlight">ki main tumse phir milu… chahe kisi bhi tarah, kisi bhi jagah</span> ✨  
+              <br><br>
 
-  <br><br>
+              Aaj ka din sirf tumhara birthday nahi hai…<br>
+              aaj wo din hai jab meri zindagi ko uska sabse beautiful reason mila 😌✨
 
-  Kaun soch sakta tha…  
-  ek chhota sa game, <span class="highlight">MODA Legend</span>…  
-  meri poori duniya badal dega 🎮💫  
+              <br><br>
 
-  Waha mujhe tum mili…  
-  aur us din se lekar aaj tak… meri life ka sabse beautiful part sirf tum ho.
+              Sach bolu… tum sirf meri life ka part nahi ho…<br>
+              <span class="highlight">tum meri life ki sabse important feeling ho</span> 💕
 
-  <br><br>
+              <br><br>
 
-  Pehli baar tumse baat hui thi…  
-  aur mujhe tab hi feel ho gaya tha ki tum normal nahi ho…  
-  <span class="highlight">tum meri ho</span> 😌💕
+              Tumhari hasi, tumhari baatein, tumhara gussa, tumhara ignore karna…<br>
+              har ek cheez itni special hai ki main chaah kar bhi tumse door reh nahi sakta 😌
 
-  Dheere dheere tum meri aadat ban gayi…  
-  phir meri zarurat…  
-  aur ab… meri zindagi ban chuki ho.
+              <br><br>
 
-  <br><br>
+              Jab tum mere saath hoti ho na…<br>
+              to lagta hai sab kuch perfect hai…<br>
+              aur jab tum thodi si door hoti ho…<br>
+              to lagta hai kuch missing hai 🥺
 
-  Tumhari har chhoti baat mujhe yaad rehti hai…  
-  tumhara hasna… tumhara gussa… tumhara ignore karna bhi 😏  
-  aur sach bolu… mujhe tumhara har version pasand hai.
+              <br><br>
 
-  <br><br>
+              Main har din ye realize karta hun ki<br>
+              <span class="highlight">tum meri life ki wo cheez ho jise main kabhi lose nahi karna chahta</span> ❤️‍🔥
 
-  Tum sirf meri girlfriend nahi ho…  
-  <span class="highlight">tum meri dhadkan ho… meri sukoon ho… meri duniya ho</span> 🥺✨  
+              <br><br>
 
-  Jab tum mere saath hoti ho na…  
-  to lagta hai sab kuch perfect hai.  
-  Aur jab tum door hoti ho… to sab kuch adhura lagta hai.
+              Aaj ke din bas ek wish hai meri…<br>
+              tum hamesha aise hi smile karti raho…<br>
+              aise hi khush raho…<br>
+              aur meri life mein aise hi raho 💛
 
-  <br><br>
+              <br><br>
 
-  Aur haan… thoda sa nahi…  
-  <span class="highlight">poora haq hai mera tum par</span> 😏💛  
+              Main promise karta hun…<br>
+              jitna ho sake main hamesha tumhe khush rakhne ki koshish karunga…<br>
+              kyunki tumhari smile mere liye sab kuch hai 😌✨
 
-  Aaj ke din tum sirf meri ho…  
-  har smile meri… har wish meri… aur sabse zyada pyaar bhi mera 💕
+              <br><br>
 
-  <br><br>
+              Aaj full enjoy karo… cake khao, hasso, masti karo…<br>
+              aur ek baar mujhe yaad karke smile karna 💕
 
-  Main sirf tumse pyaar nahi karta…  
-  main tumhe feel karta hun… har waqt… har jagah.  
+              <br><br>
 
-  Aur main promise karta hun…  
-  chahe duniya idhar ki udhar ho jaye…  
-  <span class="highlight">main kabhi tumhe akela feel nahi hone dunga</span> 💛
+              I love you… itna ki shayad kabhi words mein pura bata nahi paunga ❤️‍🔥
 
-  <br><br>
-
-  Bas ek hi wish hai meri…  
-  tum hamesha aise hi meri raho…  
-  meri baby… meri jaan… meri sab kuch 😌✨  
-
-  <br><br>
-
-  Happy Birthday meri jaan 🎂💛  
-  I love you… itna ki agar likhne baithu na… to shayad zindagi kam pad jaye ❤️‍🔥
-
-  <br><br>
-  <span style="font-family:'Dancing Script',cursive;font-size:1.5rem;color:var(--lavender);">
-    — Sirf tumhara… hamesha ke liye 😌🌙💛
-  </span>
-</div>umhara dil kabhi khaali na rahe.
-            Happy Birthday Tulip! 🌷💖</div>
+              <br><br>
+              <span style="font-family:'Dancing Script',cursive;font-size:1.5rem;color:var(--lavender);">
+                — Sirf tumhara… hamesha ke liye 😌🌙💛
+              </span>
+            </div>
+          </div>
         </div>
         <div class="surprise-box" onclick="toggleSurprise(this)">
           <span class="s-emoji">⭐</span>
           <h3>Ek Sitara Tumhara</h3>
           <p>Aaj raat dekho aasman mein...</p>
-          <div class="surprise-reveal">🌠 Aaj raat aasman mein sabse zyada chamkta sitara — wo sirf tumhara hai. Sirf
-            Tulip ka. Forever. 💫</div>
+          <div class="surprise-reveal">
+            Aaj raat jab tum aasman dekhna…<br>
+            to ek sitara thoda zyada chamakta hua milega ✨<br><br>
+            Wo sitara koi normal nahi hoga…<br>
+            <span class="highlight">wo mera pyaar hoga tumhare liye</span> 💛<br><br>
+            Har chamak ke saath wo tumhe yaad dilayega<br>
+            ki koi hai jo tumhe door rehkar bhi feel karta hai…<br>
+            jo har raat tumhare liye dua karta hai 😌<br><br>
+            Shayad main har waqt tumhare paas nahi hota…<br>
+            par mera dil hamesha tumhare aas paas hi rehta hai 💫<br><br>
+            Aur jab bhi tum us sitare ko dekhogi…<br>
+            bas ek baar smile kar dena…<br>
+            kyunki yaha koi hai jo tumhari ek smile ke liye<br>
+            poori duniya se lad sakta hai ❤️‍🔥✨
+          </div>
         </div>
         <div class="surprise-box" onclick="toggleSurprise(this)">
           <span class="s-emoji">🌸</span>
           <h3>Phool Ki Baat</h3>
           <p>Ek phool ki tarah ho tum...</p>
-          <div class="surprise-reveal">🌷 Tulip phool mausam-e-bahar mein khilta hai — aur tum bhi apni zindagi ke sabse
-            khoobsurat spring mein ho. Khilte raho! 🌺</div>
+          <div class="surprise-reveal">
+            Kehte hain phool bahut khoobsurat hote hain…<br>
+            par sach kahu to<br>
+            <span class="highlight">tum un sab se zyada khoobsurat ho</span> 🌸💛<br><br>
+            Phool sirf kuch din ke liye khilte hain…<br>
+            par tumhari smile har din meri life ko khila deti hai 😌✨<br><br>
+            Tumhari simplicity, tumhari softness…<br>
+            sab kuch itna perfect hai ki main chaah kar bhi ignore nahi kar sakta 💕<br><br>
+            Agar mujhe kabhi choose karna pade<br>
+            phool aur tumhare beech…<br>
+            to main bina soche tumhe choose karunga…<br>
+            kyunki<br>
+            <span class="highlight">tum meri life ka sabse beautiful flower ho</span> 🌷<br><br>
+            Aur main chahta hun…<br>
+            tum hamesha aise hi khilti raho…<br>
+            meri life mein, mere saath 💛
+          </div>
         </div>
         <div class="surprise-box" onclick="toggleSurprise(this)">
           <span class="s-emoji">🎵</span>
           <h3>Birthday Song</h3>
           <p>Ek sweet serenade tumhare liye...</p>
-          <div class="surprise-reveal">🎶 "Happy Birthday to you, Happy Birthday to you... Happy Birthday Dearest
-            Tulip... May all your dreams come true!" 🎂🎵</div>
+          <div class="surprise-reveal">
+            Agar main gaana gaa pata na…<br>
+            to aaj ke din sirf tumhare liye ek song likhta 🎶💛<br><br>
+            Har line mein tum hoti…<br>
+            har melody mein tumhari smile…<br>
+            aur har beat mein mera dil ❤️<br><br>
+            Ye song kuch aisa hota…<br>
+            jisme sirf ek hi baat baar baar repeat hoti —<br>
+            <span class="highlight">I love you… I love you… I love you</span> 😌💕<br><br>
+            Aur jab tum use sunte…<br>
+            to shayad tumhe feel hota<br>
+            ki koi hai jo tumhe har din thoda aur zyada pyaar karta hai ❤️‍🔥<br><br>
+            To aaj ke liye…<br>
+            ye dil hi mera music hai<br>
+            aur tum uski sabse pyari dhun 💫🎶
+          </div>
         </div>
         <div class="surprise-box" onclick="toggleSurprise(this)">
           <span class="s-emoji">💝</span>
@@ -1590,6 +1689,54 @@ function setBirthday() {
         v.replaceWith(ph);
       });
     });
+
+    // ====== VOICE NOTE ======
+    const voiceAudio = document.getElementById('voice-note-audio');
+    const voiceBtn = document.getElementById('voice-play-btn');
+    const voiceBar = document.getElementById('voice-progress-bar');
+    const voiceCurrent = document.getElementById('voice-current-time');
+    const voiceDuration = document.getElementById('voice-duration');
+    let voicePlaying = false;
+
+    function formatTime(sec) {
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return m + ':' + String(s).padStart(2, '0');
+    }
+
+    voiceAudio.addEventListener('loadedmetadata', () => {
+      voiceDuration.textContent = formatTime(voiceAudio.duration);
+    });
+
+    voiceAudio.addEventListener('timeupdate', () => {
+      if (voiceAudio.duration) {
+        const pct = (voiceAudio.currentTime / voiceAudio.duration) * 100;
+        voiceBar.style.width = pct + '%';
+        voiceCurrent.textContent = formatTime(voiceAudio.currentTime);
+      }
+    });
+
+    voiceAudio.addEventListener('ended', () => {
+      voicePlaying = false;
+      voiceBtn.textContent = '▶️';
+      voiceBar.style.width = '0%';
+      voiceCurrent.textContent = '0:00';
+    });
+
+    function toggleVoiceNote() {
+      if (voicePlaying) {
+        voiceAudio.pause();
+        voiceBtn.textContent = '▶️';
+        voicePlaying = false;
+      } else {
+        voiceAudio.play().then(() => {
+          voiceBtn.textContent = '⏸️';
+          voicePlaying = true;
+        }).catch(() => {
+          voiceBtn.textContent = '⚠️';
+        });
+      }
+    }
 
     // ====== WHATSAPP REPLY ======
     function sendWhatsApp() {
