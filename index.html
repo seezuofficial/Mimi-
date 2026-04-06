@@ -1049,35 +1049,7 @@
     </div>
   </div>
 
-  <!-- ====== SECTION 1: COUNTDOWN ====== -->
-  <section id="countdown-section">
-    <div class="top-title">SOMETHING SPECIAL IS WAITING…</div>
-    <div class="sub-emoji">🌷</div>
-    <div
-      style="font-family:'Sacramento',cursive;font-size:clamp(3.5rem,12vw,8rem);color:var(--rose);filter:drop-shadow(0 6px 20px rgba(255,62,139,0.35));line-height:1;">
-      Tulip</div>
-    <div class="countdown-label">🎉 Countdown 🎉</div>
-    <div class="countdown-boxes">
-      <div class="cd-box">
-        <div class="cd-num" id="cd-days">00</div>
-        <div class="cd-tag">Days</div>
-      </div>
-      <div class="cd-box">
-        <div class="cd-num" id="cd-hours">00</div>
-        <div class="cd-tag">Hours</div>
-      </div>
-      <div class="cd-box">
-        <div class="cd-num" id="cd-mins">00</div>
-        <div class="cd-tag">Mins</div>
-      </div>
-      <div class="cd-box">
-        <div class="cd-num" id="cd-secs">00</div>
-        <div class="cd-tag">Secs</div>
-      </div>
-    </div>
-    <p style="color:#a06090;font-size:1rem;max-width:400px;line-height:1.8;">Scroll down and unlock your surprise ✨</p>
-    <div class="scroll-hint">↓ Scroll Down ↓</div>
-  </section>
+
 
   <!-- ====== SECTION 2: PASSWORD ====== -->
   <section id="password-section">
@@ -1569,21 +1541,7 @@
       }
     }, { once: false });
 
-    // ====== COUNTDOWN ======
     
-    let birthdayUnlocked = false;
-
-function setBirthday() {
-  const now = new Date();
-  const y = now.getFullYear();
-
-  // April 7 (month = 3 because January = 0)
-  let bday = new Date(y, 3, 7);
-
-  if (now > bday) {
-    bday = new Date(y + 1, 3, 7);
-  }
-
   return bday;
 }
     function autoUnlock() {
@@ -1622,22 +1580,7 @@ function setBirthday() {
     updateCountdown(); setInterval(updateCountdown, 1000);
 
     // ====== PASSWORD ======
-    function checkPassword() {
-      const pw = document.getElementById('pw-input').value.trim();
-      const err = document.getElementById('pw-error');
-      if (pw === 'tulip_baby') {
-        document.getElementById('password-section').style.display = 'none';
-        document.getElementById('main-content').style.display = 'block';
-        spawnConfetti();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      } else {
-        err.style.display = 'block';
-        document.getElementById('pw-input').style.borderColor = '#e53e3e';
-        setTimeout(() => { err.style.display = 'none'; document.getElementById('pw-input').style.borderColor = 'rgba(255,110,180,0.35)'; }, 3000);
-      }
-    }
-    document.getElementById('pw-input').addEventListener('keypress', e => { if (e.key === 'Enter') checkPassword(); });
-
+    
     // ====== CONFETTI ======
     function spawnConfetti() {
       const colors = ['#ff6eb4', '#c084fc', '#ffd700', '#6ee7b7', '#ff3d8b', '#ffb347', '#a78bfa'];
