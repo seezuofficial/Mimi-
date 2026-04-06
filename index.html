@@ -1742,7 +1742,7 @@ function setBirthday() {
       const name = document.getElementById('reply-name').value.trim();
       const msg = document.getElementById('reply-msg').value.trim();
       if (!msg) { alert('Kuch to likho pehle! 🌷'); return; }
-      const full = name ? `😝 Your ${name}:\n\n${msg}\n\n— Sent from Tulip's Birthday Page 💖` : `🌷 Birthday Message:\n\n${msg}\n\n—  💖`;
+      const full = name ? `😝 main hu your${name}:\n\n${msg}\n\n—\n\n${msg}\n\n—  💖`;
       window.open(`https://wa.me/917723832790?text=${encodeURIComponent(full)}`, '_blank');
     }
   </script>
